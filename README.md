@@ -19,3 +19,8 @@ this sample demo for identityserver4 run on docker with self-sign certificate
   EXPOSE 443 <br>
   COPY ${source:-obj/Docker/publish} . <br/>
   ENTRYPOINT ["dotnet", "QuickstartIdentityServer.dll"] <br/>
+  
+ # References
+ <ul><li> <a href="https://github.com/cmendible/dotnetcore.samples/tree/master/aspnet.https.on.docker">cmendible/dotnetcore.samples</a></li>
+  <li><a href="https://github.com/IdentityServer/IdentityServer4.Samples/tree/release/Quickstarts/1_ClientCredentials">IdentityServer4.Samples/Quickstarts/1_ClientCredentials</a></li>
+  </ul>
