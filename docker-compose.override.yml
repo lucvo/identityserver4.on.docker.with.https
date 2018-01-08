@@ -4,7 +4,7 @@ services:
   api:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - identityUrl=http://quickstartidentityserver
+      - identityUrl=https://quickstartidentityserver
     ports:
       - "6001:80"
 
