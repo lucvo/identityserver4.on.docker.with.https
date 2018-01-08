@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - identityUrl=http://quickstartidentityserver
+    ports:
+      - "6001:80"
+
+  quickstartidentityserver:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "44312:443"

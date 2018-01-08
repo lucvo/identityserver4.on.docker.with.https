@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  api:
+    image: quickstart/api
+    build:
+      context: ./src/Api
+      dockerfile: Dockerfile
+    depends_on:
+      - quickstartidentityserver
+
+  quickstartidentityserver:
+    image: quickstart/identityserver
+    build:
+      context: ./src/QuickstartIdentityServer
+      dockerfile: Dockerfile
+
